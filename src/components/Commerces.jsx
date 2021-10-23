@@ -19,22 +19,26 @@ const Commerces = () => {
 
 
     return (
-        <div>
+        <>
             <GenerateCard />
-        </div>
+        </>
     )
 
     function GenerateCard() {
         return (
-            getData.map((commerce) => {
-                return (
-                <div className="commerceCard" key={ commerce.recordid }>
-                    <h2 className="title">{ commerce.fields.titre }</h2>
-                    <a href={ commerce.fields.site_internet } target="_blank">lien vers le site</a>
-                    <p className="phone">{ commerce.fields.numero_de_telephone }</p>
-                </div>
-            );
-        })
+            <div className="commerceContainer">
+            {
+                getData.map((commerce) => {
+                    return (
+                    <div className="commerceCard" key={ commerce.recordid }>
+                        <h2 className="title">{ commerce.fields.titre }</h2>
+                        <a href={ commerce.fields.site_internet } target="_blank">lien vers le site</a>
+                        <p className="phone">{ commerce.fields.numero_de_telephone }</p>
+                    </div>
+                    );
+                })
+            }
+        </div>
         )
     }
 }
