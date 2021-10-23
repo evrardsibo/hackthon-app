@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import Carousel from 'react-elastic-carousel'
+import {AiOutlineArrowLeft} from "react-icons/all";
 
 
 const Restaurants = () => {
@@ -26,6 +27,7 @@ const Restaurants = () => {
     function GetCarousel() {
         return (
             <div className="container">
+                <AiOutlineArrowLeft onClick={() => window.history.back()} />
                 <Carousel
                     itemsToShow={itemToShowCarou}
                     showArrows={false}
@@ -34,13 +36,13 @@ const Restaurants = () => {
                     className="movieList"
                 >
                     <div className="card">
-                        <NavLink to="/" className="title">Cafe / Brasseries</NavLink>
+                        <NavLink to="/cafedetails" className="title">Cafe / Brasseries</NavLink>
                     </div>
                     <div className="card">
-                        <NavLink to="/" className="title">Snack / Friteries</NavLink>
+                        <NavLink to="/snackdetails" className="title">Snack / Friteries</NavLink>
                     </div>
                     <div className="card">
-                        <NavLink to="/" className="title">Restaurants</NavLink>
+                        <NavLink to="/restaurantdetails" className="title">Restaurants</NavLink>
                     </div>
                 </Carousel>
             </div>
