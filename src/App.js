@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import Commerces from './components/Commerces'
 import Loisir from './components/Loisir'
 import Inspiration from './components/Inspiration'
+import Sport from './components/Sport'
 import {
     BrowserRouter as Router,
     Switch,
@@ -41,6 +42,9 @@ export default function App() {
                     </Route>
                     <Route path="/loisir">
                         <Loisir />
+                    </Route>
+                    <Route path="/sport">
+                        <Sport />
                     </Route>
                     {/*<Route path="/detail">*/}
                     {/*    <Detail />*/}

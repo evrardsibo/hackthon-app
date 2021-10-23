@@ -19,9 +19,9 @@ const Commerces = () => {
 
 
     return (
-        <>
+        <main>
             <GenerateCard />
-        </>
+        </main>
     )
 
     function GenerateCard() {
@@ -32,7 +32,7 @@ const Commerces = () => {
                     return (
                     <div className="commerceCard" key={ commerce.recordid }>
                         <h2 className="title">{ commerce.fields.titre }</h2>
-                        <a href={ commerce.fields.site_internet } target="_blank">lien vers le site</a>
+                        { checkWebSite(commerce) }
                         <p className="phone">{ commerce.fields.numero_de_telephone }</p>
                     </div>
                     );
@@ -40,6 +40,14 @@ const Commerces = () => {
             }
         </div>
         )
+    }
+
+    function checkWebSite(commerce) {
+        if(commerce.fields.site_internet == undefined) {
+            return;
+        } else {
+            return <a href={ commerce.fields.site_internet } target="_blank">lien vers le site</a>
+        }
     }
 }
 
