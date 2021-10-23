@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Restaurants from "./components/Restaurants";
 import Commerces from "./components/Commerces";
 import Home from "./components/Home";
@@ -17,6 +17,7 @@ import TextileDetails from "./Pages/restaurants/textileDetails";
 import RestaurantDetails from "./Pages/commerces/restaurantDetails";
 import SnackDetails from "./Pages/commerces/snackDetails";
 import BoulangerieDetails from "./Pages/restaurants/boulangerieDetails";
+import axios from 'axios'
 
 export default function App() {
     function callChat() {
@@ -32,6 +33,24 @@ export default function App() {
         t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
         document.head.appendChild(t);
     }, 1000);
+
+    const [dataRestau, setDataRestau] = useState([])
+    const [dataCom, setDataCom] = useState([])
+
+    const URL_Restau = 'https://www.odwb.be/api/records/1.0/search/?dataset=horeca&q=&lang=fr&rows=34&start=0&facet=nomenclature_de_pois'
+    const URL_Com = 'https://www.odwb.be/api/records/1.0/search/?dataset=antoing-commerces&q=&lang=fr&rows=53&start=0&facet=nomenclature_de_pois'
+
+    async function fetch(url) {
+        return axios.get(url)
+    }
+
+    useEffect(() => {
+        fetch(URL_Com).then(res => setDataCom(res.data.records))
+        fetch(URL_Restau).then(res => setDataRestau(res.data.records))
+    }, [])
+
+    console.log(dataRestau)
+    console.log(dataCom)
 
     callChat();
     return (
