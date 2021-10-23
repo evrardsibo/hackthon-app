@@ -9,4 +9,16 @@
 }
 .infoContainer p {
   font-size: 1rem;
+  @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+}
+.infoContainer p .infoContainer {
+  margin-top: 15rem;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+.infoContainer p .infoContainer .title {
+  font-size: 1.7rem;
+}
+.infoContainer p .infoContainer p {
+  font-size: 1rem;
 }/*# sourceMappingURL=Restau.css.map */
