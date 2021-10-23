@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4177c2634cde8e2c4893884575a461b57409dae2
 import React from "react";
 import Restau from './components/Restau'
 import Acceuil from './components/Acceuil'
