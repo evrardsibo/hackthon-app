@@ -1,6 +1,7 @@
 import React,{ useState } from 'react'
 import Carousel from 'react-elastic-carousel'
 import { NavLink } from 'react-router-dom'
+import {AiOutlineArrowLeft} from "react-icons/all";
 
 const Commerces = () => {
     const [itemToShowCarou, setItemToShowCarou] = useState(1)
@@ -26,6 +27,7 @@ const Commerces = () => {
     function GetCarousel() {
         return (
             <div className="container">
+                <AiOutlineArrowLeft onClick={() => window.history.back()} />
                 <Carousel
                     itemsToShow={itemToShowCarou}
                     showArrows={false}
@@ -34,22 +36,22 @@ const Commerces = () => {
                     className="movieList"
                 >
                     <div className="card">
-                        <NavLink to="/" className="title">Alimentation</NavLink>
+                        <NavLink to="/alimentationDetails" className="title">Alimentation</NavLink>
                     </div>
                     <div className="card">
-                        <NavLink to="/" className="title">textile</NavLink>
+                        <NavLink to="/TextileDetails" className="title">textile</NavLink>
                     </div>
                     <div className="card">
-                        <NavLink to="/" className="title">Pharmacie</NavLink>
+                        <NavLink to="/pharmaciedetails" className="title">Pharmacie</NavLink>
                     </div>
                     <div className="card">
-                        <NavLink to="/" className="title">Boulangerie</NavLink>
+                        <NavLink to="/boulangeriedetails" className="title">Boulangerie</NavLink>
                     </div>
                     <div className="card">
-                        <NavLink to="/" className="title">Soins du corps</NavLink>
+                        <NavLink to="/soinsDetails" className="title">Soins du corps</NavLink>
                     </div>
                     <div className="card">
-                        <NavLink to="/" className="title">Librairie</NavLink>
+                        <NavLink to="/librairieDetails" className="title">Librairie</NavLink>
                     </div>
                 </Carousel>
             </div>
