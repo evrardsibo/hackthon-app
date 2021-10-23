@@ -6,14 +6,14 @@ const Discover = () => {
             <button>En manque d'inspiration ?</button>
             <div className="container">
                 <div className="divOne">
-                    <Link to="/">Restaurant</Link>
-                    <Link to="/">Loisir</Link>
-                    <Link to="/">Évènement</Link>
+                    <Link to="/restau">Restaurant</Link>
+                    <Link to="/loisir">Loisir</Link>
+                    <Link to="/evenements">Évènement</Link>
                 </div>
                 <div className="divTwo">
-                    <Link to="/">Sport</Link>
-                    <Link to="/">Art</Link>
-                    <Link to="/">Commerce</Link>
+                    <Link to="/sport">Sport</Link>
+                    <Link to="/art">Art</Link>
+                    <Link to="/commerce">Commerce</Link>
                 </div>
             </div>            
         </div>

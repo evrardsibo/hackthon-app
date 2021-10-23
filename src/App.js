@@ -4,7 +4,7 @@ import Acceuil from './components/Acceuil'
 import NavBar from './components/NavBar'
 import Commerces from './components/Commerces'
 import Loisir from './components/Loisir'
-impo
+import Inspiration from './components/Inspiration'
 import {
     BrowserRouter as Router,
     Switch,
@@ -30,16 +30,16 @@ export default function App() {
                     {/*<Route path="/discoverDetail/:id">*/}
                     {/*    <DiscoverDetail />*/}
                     {/*</Route>*/}
-                    {/*<Route path="/inspiration">*/}
-                    {/*    <Inspiration />*/}
-                    {/*</Route>*/}
-                    <Route path="/inspiration/restau">
+                    <Route path="/inspiration">
+                        <Inspiration />
+                    </Route>
+                    <Route exact path="/restau">
                         <Restau />
                     </Route>
-                    <Route path="/inspiration/Commerces">
+                    <Route path="/commerces">
                         <Commerces />
                     </Route>
-                    <Route path="/inspiration/Loisir">
+                    <Route path="/loisir">
                         <Loisir />
                     </Route>
                     {/*<Route path="/detail">*/}
