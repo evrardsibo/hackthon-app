@@ -1,11 +1,11 @@
 import React from 'react'
 
-const restaurantDetails = () => {
+const RestaurantDetails = () => {
     return (
         <div>
-            
+            restaudetail
         </div>
     )
 }
 
-export default restaurantDetails
+export default RestaurantDetails

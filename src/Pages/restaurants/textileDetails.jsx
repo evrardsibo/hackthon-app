@@ -1,11 +1,11 @@
 import React from 'react'
 
-const textileDetails = () => {
+const TextileDetails = () => {
     return (
         <div>
-            
+            text
         </div>
     )
 }
 
-export default textileDetails
+export default TextileDetails

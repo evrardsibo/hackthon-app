@@ -8,6 +8,15 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import CafeDetails from "./Pages/commerces/cafeDetails";
+import AlimentationDetails from "./Pages/restaurants/alimentationDetails";
+import LibrairieDetails from "./Pages/restaurants/librairieDetails";
+import PharmacieDetails from "./Pages/restaurants/pharmacieDetails";
+import SoinsDetails from "./Pages/restaurants/soinsDetails";
+import TextileDetails from "./Pages/restaurants/textileDetails";
+import RestaurantDetails from "./Pages/commerces/restaurantDetails";
+import SnackDetails from "./Pages/commerces/snackDetails";
+import BoulangerieDetails from "./Pages/restaurants/boulangerieDetails";
 
 export default function App() {
     function callChat() {
@@ -29,8 +38,41 @@ export default function App() {
         <Router>
             <div>
                 <Switch>
-                    <Route exact path="/home">
+                    <Route exact path="/">
                         <Home />
+                    </Route>
+                    <Route exact path="/commerces">
+                        <Commerces />
+                    </Route>
+                    <Route exact path="/restaurants">
+                        <Restaurants />
+                    </Route>
+                    <Route exact path="/cafeDetails">
+                        <CafeDetails />
+                    </Route>
+                    <Route exact path="/restaurantDetails">
+                        <RestaurantDetails />
+                    </Route>
+                    <Route exact path="/snackDetails">
+                        <SnackDetails />
+                    </Route>
+                    <Route exact path="/alimentationDetails">
+                        <AlimentationDetails />
+                    </Route>
+                    <Route exact path="/boulangerieDetails">
+                        <BoulangerieDetails />
+                    </Route>
+                    <Route exact path="/librarieDetails">
+                        <LibrairieDetails />
+                    </Route>
+                    <Route exact path="/pharmacieDetails">
+                        <PharmacieDetails />
+                    </Route>
+                    <Route exact path="/soinsDetails">
+                        <SoinsDetails />
+                    </Route>
+                    <Route exact path="/textileDetails">
+                        <TextileDetails />
                     </Route>
                 </Switch>
             </div>

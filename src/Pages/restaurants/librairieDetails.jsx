@@ -1,11 +1,11 @@
 import React from 'react'
 
-const librairieDetails = () => {
+const LibrairieDetails = () => {
     return (
         <div>
-            
+            lib
         </div>
     )
 }
 
-export default librairieDetails
+export default LibrairieDetails
