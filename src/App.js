@@ -67,31 +67,31 @@ export default function App() {
                         <Restaurants />
                     </Route>
                     <Route exact path="/cafeDetails">
-                        <CafeDetails />
+                        <CafeDetails rest={ dataRestau }/>
                     </Route>
                     <Route exact path="/restaurantDetails">
-                        <RestaurantDetails />
+                        <RestaurantDetails rest={ dataRestau }/>
                     </Route>
                     <Route exact path="/snackDetails">
-                        <SnackDetails />
+                        <SnackDetails rest={ dataRestau }/>
                     </Route>
                     <Route exact path="/alimentationDetails">
-                        <AlimentationDetails />
+                        <AlimentationDetails com={ dataCom }/>
                     </Route>
                     <Route exact path="/boulangerieDetails">
-                        <BoulangerieDetails />
+                        <BoulangerieDetails com={ dataCom }/>
                     </Route>
                     <Route exact path="/librairieDetails">
-                        <LibrairieDetails />
+                        <LibrairieDetails com={ dataCom }/>
                     </Route>
                     <Route exact path="/pharmacieDetails">
-                        <PharmacieDetails />
+                        <PharmacieDetails com={ dataCom }/>
                     </Route>
                     <Route exact path="/soinsDetails">
-                        <SoinsDetails />
+                        <SoinsDetails com={ dataCom }/>
                     </Route>
                     <Route exact path="/textileDetails">
-                        <TextileDetails />
+                        <TextileDetails com={ dataCom }/>
                     </Route>
                 </Switch>
             </div>

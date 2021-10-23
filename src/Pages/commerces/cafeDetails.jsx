@@ -1,7 +1,9 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
 
-const CafeDetails = () => {
+const CafeDetails = (props) => {
+    console.log(props);
+    const stockData = { ...props }
     return (
         <div>
             cafe
