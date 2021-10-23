@@ -14,7 +14,11 @@ const Commerces = () => {
     function MoreInfo() {
         return (
             <div className="infoContainer">
-                Choisissez un type de commerces
+                <h2>Choisissez un type de commerces</h2>
+                <p>La ville d'Antoing propose tout type de commerces, allant de
+                    l'alimentaire au confort de votre maison. Faites vos courses
+                    près de chez-vous, faites tourner l"économie local.
+                </p>
             </div>
         );
     }
@@ -26,6 +30,7 @@ const Commerces = () => {
                     itemsToShow={itemToShowCarou}
                     showArrows={false}
                     pagination={false}
+                    enableAutoPlay autoPlaySpeed={3500}
                     className="movieList"
                 >
                     <div className="card">

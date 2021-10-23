@@ -15,7 +15,10 @@ const Restaurants = () => {
     function MoreInfo() {
         return (
             <div className="infoContainer">
-                Choisissez un type de restauration
+                <h2>Choisissez un type de restauration</h2>
+                <p>La ville d'Antoing propose différent type de restauration pour
+                    tous les gouts et tous le monde.
+                </p>
             </div>
         );
     }
@@ -27,6 +30,7 @@ const Restaurants = () => {
                     itemsToShow={itemToShowCarou}
                     showArrows={false}
                     pagination={false}
+                    enableAutoPlay autoPlaySpeed={3500}
                     className="movieList"
                 >
                     <div className="card">
