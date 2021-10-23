@@ -1,5 +1,7 @@
-return (
 import React from "react";
+import Restau from './components/Restau'
+import Acceuil from './components/Acceuil'
+import NavBar from './components/NavBar'
 import {
     BrowserRouter as Router,
     Switch,
@@ -16,21 +18,24 @@ export default function App() {
                     <Route exact path="/">
                         <Acceuil />
                     </Route>
-                    <Route path="/admin">
-                        <Admin />
+                    {/*<Route path="/admin">*/}
+                    {/*    <Admin />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/discover">*/}
+                    {/*    <Discover />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/discoverDetail/:id">*/}
+                    {/*    <DiscoverDetail />*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/inspiration">*/}
+                    {/*    <Inspiration />*/}
+                    {/*</Route>*/}
+                    <Route path="/inspiration/restau">
+                        <Restau />
                     </Route>
-                    <Route path="/discover">
-                        <Discover />
-                    </Route>
-                    <Route path="/discoverDetail/:id">
-                        <DiscoverDetail />
-                    </Route>
-                    <Route path="/inspiration">
-                        <Inspiration />
-                    </Route>
-                    <Route path="/detail">
-                        <Detail />
-                    </Route>
+                    {/*<Route path="/detail">*/}
+                    {/*    <Detail />*/}
+                    {/*</Route>*/}
                 </Switch>
             </div>
         </Router>
