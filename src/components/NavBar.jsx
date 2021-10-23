@@ -1,4 +1,4 @@
-import NavLink from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { AiOutlineHome } from 'react-icons/ai';
 import { RiCommunityLine } from 'react-icons/ri';
 import { BsBinoculars } from 'react-icons/bs';
