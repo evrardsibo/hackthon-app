@@ -3,6 +3,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { RiCommunityLine } from 'react-icons/ri';
 import { BsBinoculars } from 'react-icons/bs';
 import { BsLightbulb } from 'react-icons/bs';
+import { IconContext } from 'react-icons/'
 
 const NavBar = () => {
     let icons = { className: 'icons' }

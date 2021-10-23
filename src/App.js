@@ -2,6 +2,9 @@ import React from "react";
 import Restau from './components/Restau'
 import Acceuil from './components/Acceuil'
 import NavBar from './components/NavBar'
+import Commerces from './components/Commerces'
+import Loisir from './components/Loisir'
+impo
 import {
     BrowserRouter as Router,
     Switch,
@@ -32,6 +35,12 @@ export default function App() {
                     {/*</Route>*/}
                     <Route path="/inspiration/restau">
                         <Restau />
+                    </Route>
+                    <Route path="/inspiration/Commerces">
+                        <Commerces />
+                    </Route>
+                    <Route path="/inspiration/Loisir">
+                        <Loisir />
                     </Route>
                     {/*<Route path="/detail">*/}
                     {/*    <Detail />*/}
