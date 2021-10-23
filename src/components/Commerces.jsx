@@ -33,7 +33,7 @@ const Commerces = () => {
                     itemsToShow={itemToShowCarou}
                     showArrows={false}
                     pagination={false}
-                    enableAutoPlay autoPlaySpeed={3500}
+                    enableAutoPlay autoPlaySpeed={6500}
                     className="movieList"
                 >
                     <div className="card">
