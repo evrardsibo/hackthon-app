@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import Carousel from 'react-elastic-carousel'
 import {AiOutlineArrowLeft} from "react-icons/all";
+import '../assets/scss/Restau.css'
 
 
 const Restaurants = () => {
@@ -16,7 +17,7 @@ const Restaurants = () => {
     function MoreInfo() {
         return (
             <div className="infoContainer">
-                <h2>Choisissez un type de restauration</h2>
+                <p className="title">Choisissez un type de restauration</p>
                 <p>La ville d'Antoing propose différent type de restauration pour
                     tous les gouts et tous le monde.
                 </p>

@@ -2,6 +2,7 @@ import React,{ useState } from 'react'
 import Carousel from 'react-elastic-carousel'
 import { NavLink } from 'react-router-dom'
 import {AiOutlineArrowLeft} from "react-icons/all";
+import '../assets/scss/Comm.css'
 
 const Commerces = () => {
     const [itemToShowCarou, setItemToShowCarou] = useState(1)
@@ -15,10 +16,10 @@ const Commerces = () => {
     function MoreInfo() {
         return (
             <div className="infoContainer">
-                <h2>Choisissez un type de commerces</h2>
+                <p className="title">Choisissez un type de commerce</p>
                 <p>La ville d'Antoing propose tout type de commerces, allant de
                     l'alimentaire au confort de votre maison. Faites vos courses
-                    près de chez-vous, faites tourner l"économie local.
+                    près de chez vous et contribuez à l'épanouissement de l'économie local.
                 </p>
             </div>
         );
