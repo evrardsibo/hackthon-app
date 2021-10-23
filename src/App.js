@@ -62,7 +62,7 @@ export default function App() {
                     <Route exact path="/boulangerieDetails">
                         <BoulangerieDetails />
                     </Route>
-                    <Route exact path="/librarieDetails">
+                    <Route exact path="/librairieDetails">
                         <LibrairieDetails />
                     </Route>
                     <Route exact path="/pharmacieDetails">
