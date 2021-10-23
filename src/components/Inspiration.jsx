@@ -13,7 +13,7 @@ const Discover = () => {
                 <div className="divTwo">
                     <Link to="/sport">Sport</Link>
                     <Link to="/art">Art</Link>
-                    <Link to="/commerce">Commerce</Link>
+                    <Link to="/commerces">Commerce</Link>
                 </div>
             </div>            
         </div>
