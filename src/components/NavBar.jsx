@@ -10,16 +10,16 @@ const NavBar = () => {
     return (
         <header>
             <nav className="menu">
-                <NavLink to='./'>
+                <NavLink to='/'>
                     <IconContext.Provider value={ icons }><AiOutlineHome /></IconContext.Provider>
                 </NavLink>
-                <NavLink to='./'>
+                <NavLink to='/admin'>
                     <IconContext.Provider value={ icons }><RiCommunityLine /></IconContext.Provider>
                 </NavLink>
-                <NavLink to='./'>
+                <NavLink to='/discover'>
                     <IconContext.Provider value={ icons }><BsBinoculars /></IconContext.Provider>
                 </NavLink>
-                <NavLink to='./'>
+                <NavLink to='/inspiration'>
                     <IconContext.Provider value={ icons }><BsLightbulb /></IconContext.Provider>
                 </NavLink>
             </nav>
