@@ -29,7 +29,6 @@ const Restaurants = () => {
     function GetCarousel() {
         return (
             <div className="container">
-                <AiOutlineArrowLeft onClick={() => window.history.back()} />
                 <Carousel
                     itemsToShow={itemToShowCarou}
                     showArrows={false}

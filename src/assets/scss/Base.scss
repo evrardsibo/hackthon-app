@@ -15,11 +15,10 @@ body {
 }
 
 
-.container {
+.containerDetails {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px 0;
     .card {
         width: 70%;
         // height: 5rem;

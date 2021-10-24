@@ -14,7 +14,7 @@ const RestaurantDetails = (props) => {
 
     function GetCardData() {
         return (
-            <div className="container">
+            <div className="containerDetails">
                 {
                     stockData.filter(rest => rest.fields.nomenclature_de_pois == "Restaurants").map((rest) => {
                         return (
