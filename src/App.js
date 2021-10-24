@@ -49,8 +49,6 @@ export default function App() {
         fetch(URL_Restau).then(res => setDataRestau(res.data.records))
     }, [])
 
-    console.log('restau',dataRestau)
-    console.log('com',dataCom)
 
     callChat();
     return (
