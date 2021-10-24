@@ -1,10 +1,7 @@
 import React from 'react'
 import {AiOutlineArrowLeft} from "react-icons/all"
 import { BiUpArrow } from "react-icons/bi"
-<<<<<<< HEAD:src/Pages/restaurants/boulangerieDetails.jsx
-=======
 import '../../assets/scss/Base.css'
->>>>>>> 87bb41702eb2b02c0c68d6f3fda481a3f963c01e:src/Pages/commerces/boulangerieDetails.jsx
 
 const BoulangerieDetails = (props) => {
     const stockData = [...props.com]

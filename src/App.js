@@ -8,15 +8,15 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import CafeDetails from "./Pages/commerces/cafeDetails";
-import AlimentationDetails from "./Pages/restaurants/alimentationDetails";
-import LibrairieDetails from "./Pages/restaurants/librairieDetails";
-import PharmacieDetails from "./Pages/restaurants/pharmacieDetails";
-import SoinsDetails from "./Pages/restaurants/soinsDetails";
-import TextileDetails from "./Pages/restaurants/textileDetails";
-import RestaurantDetails from "./Pages/commerces/restaurantDetails";
-import SnackDetails from "./Pages/commerces/snackDetails";
-import BoulangerieDetails from "./Pages/restaurants/boulangerieDetails";
+import CafeDetails from "./Pages/restaurants/cafeDetails";
+import AlimentationDetails from "./Pages/commerces/alimentationDetails";
+import LibrairieDetails from "./Pages/commerces/librairieDetails";
+import PharmacieDetails from "./Pages/commerces/pharmacieDetails";
+import SoinsDetails from "./Pages/commerces/soinsDetails";
+import TextileDetails from "./Pages/commerces/textileDetails";
+import RestaurantDetails from "./Pages/restaurants/restaurantDetails";
+import SnackDetails from "./Pages/restaurants/snackDetails";
+import BoulangerieDetails from "./Pages/commerces/boulangerieDetails";
 import axios from 'axios'
 
 export default function App() {
