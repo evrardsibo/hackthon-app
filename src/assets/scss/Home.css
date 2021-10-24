@@ -1,16 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+body {
+  margin: 0;
+}
+
 .linkDiv {
   margin-top: 18rem;
   text-align: center;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 1.56rem;
 }
+
 .linkDiv .linkGroup {
   margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .linkDiv .linkGroup .commerces {
   padding: 1.5rem;
   text-align: center;
@@ -24,17 +37,22 @@
   color: #fff;
   text-decoration: none;
   width: 12.5rem;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   overflow: hidden;
-  box-shadow: 0 5px 15px #193047;
+  -webkit-box-shadow: 0 5px 15px #193047;
+          box-shadow: 0 5px 15px #193047;
   border-radius: 4px;
   margin-bottom: 1.5rem;
 }
+
 .linkDiv .linkGroup .commerces:hover {
   background: #fff;
-  box-shadow: 0px 2px 10px 5px #f64444;
+  -webkit-box-shadow: 0px 2px 10px 5px #f64444;
+          box-shadow: 0px 2px 10px 5px #f64444;
   color: #000;
 }
+
 .linkDiv .linkGroup .commerces:after {
   content: "";
   background: #f64444;
@@ -45,11 +63,14 @@
   margin-left: -20px !important;
   margin-top: -120%;
   opacity: 0;
+  -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
+
 .linkDiv .linkGroup .commerces:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
+  -webkit-transition: 0s;
   transition: 0s;
 } /*# sourceMappingURL=Home.css.map */

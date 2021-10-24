@@ -9,6 +9,7 @@ const Restaurants = () => {
     const [itemToShowCarou, setItemToShowCarou] = useState(1)
     return (
         <main>
+            <span className="backArrow"><AiOutlineArrowLeft onClick={() => window.history.back()} /></span>
             <MoreInfo />
             <GetCarousel />
         </main>
