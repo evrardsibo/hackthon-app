@@ -1,4 +1,66 @@
 body {
     margin: 0;
-    height: 62.5rem;
+}
+
+.backArrow {
+    position: fixed;
+    padding-top: 7px;
+    top: 20px;
+    left: 20px;
+    font-size: 1.7em;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    .card {
+        width: 70%;
+        // height: 5rem;
+        overflow: hidden;
+        background-color: #f64444;
+        border-radius: 4px;
+        padding: 10px;
+        color: white;
+        margin: 15px 0;
+        transition: 0.4s ease-in-out;
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0px 2px 10px 5px #f64444;
+            color: #000;
+        }
+    }
+    .group {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+        .title {
+            margin-bottom: 0;
+            font-size: 1.4rem;
+        }
+        .iconArrow {
+            margin-left: 20px;
+            transform: rotate(180deg);
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        .adresse {
+            margin-top: 10px;
+        }
+        .number {
+            margin-top: 0;
+            font-style: italic;
+            cursor: pointer;
+            color: #d4d4d4;
+        }
+    }
 }
