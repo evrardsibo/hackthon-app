@@ -14,7 +14,7 @@ const AlimentationDetails = (props) => {
 
     function GetCardData() {
         return (
-            <div className="container">
+            <div className="containerDetails">
                 {
                     stockData.filter(alim => alim.fields.nomenclature_de_pois == "Alimentation / Car drink").map((alim) => {
                         return (

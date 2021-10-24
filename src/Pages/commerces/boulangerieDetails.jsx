@@ -14,7 +14,7 @@ const BoulangerieDetails = (props) => {
 
     function GetCardData() {
         return (
-            <div className="container">
+            <div className="containerDetails">
                 {
                     stockData.filter(boul => boul.fields.nomenclature_de_pois == "Boulangerie / Pâtisserie / Glacier").map((boul) => {
                         return (
