@@ -1,5 +1,6 @@
 import React from 'react'
-import {AiOutlineArrowLeft} from "react-icons/all";
+import {AiOutlineArrowLeft} from "react-icons/all"
+import { BiUpArrow } from "react-icons/bi"
 
 const BoulangerieDetails = (props) => {
     const stockData = [...props.com]
