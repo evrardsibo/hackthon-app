@@ -9,16 +9,60 @@
 }
 .infoContainer p {
   font-size: 1rem;
-  @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 }
-.infoContainer p .infoContainer {
-  margin-top: 15rem;
+
+.container {
+  padding: 1.5rem;
   text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #f64444;
+  border: none;
+  text-decoration: none;
+  width: 12.5rem;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+  margin: 7rem auto 1.5rem auto;
+  background-color: #f64444;
+}
+.container:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #f64444;
+}
+.container:hover a {
+  color: #000;
+}
+.container a {
+  text-transform: uppercase;
+  text-decoration: none;
   font-family: "Dosis", sans-serif;
+  font-size: 1.56rem;
+  color: #fff;
+  position: relative;
 }
-.infoContainer p .infoContainer .title {
-  font-size: 1.7rem;
+.container a:hover {
+  color: #000;
 }
-.infoContainer p .infoContainer p {
-  font-size: 1rem;
+.container a:after {
+  content: "";
+  background: #f64444;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.container a:after:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }/*# sourceMappingURL=Restau.css.map */
