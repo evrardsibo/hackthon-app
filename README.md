@@ -10,6 +10,7 @@ You can see it deployed [here](https://hackthon-app-two.vercel.app/).
 - [Frank Wang](https://github.com/FrankZiWANG-dev)
 - [Mathis Vankoekelberg](https://github.com/MathisVkg)
 - [Elisandre Leanens](https://github.com/ElisandreL)
+- [Evrard Sibomana](https://github.com/evrardsibo)
 
 ## Context & Solution
 
